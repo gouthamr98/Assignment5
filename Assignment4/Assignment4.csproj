@@ -72,6 +72,7 @@
     <Content Include="Guest\Guest1.aspx" />
     <Content Include="Guest\Login.aspx" />
     <Content Include="Guest\UserReg.aspx" />
+    <Content Include="User\Redirect.aspx" />
     <Content Include="User\User1.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -127,6 +128,13 @@
       <DependentUpon>UserReg.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="User\Redirect.aspx.cs">
+      <DependentUpon>Redirect.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\Redirect.aspx.designer.cs">
+      <DependentUpon>Redirect.aspx</DependentUpon>
+    </Compile>
     <Compile Include="User\User1.aspx.cs">
       <DependentUpon>User1.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
