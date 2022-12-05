@@ -53,7 +53,8 @@ footer p a {
 
      <nav>
                     <ul>
-                         <li><a href="AdminHome.aspx">Home</a></li>
+                         <li><a href="Admin1.aspx">Home</a></li>
+                            <li><a href="Block.aspx">Block-User</a></li>
                         
                         <li><a href="../Guest/Guest1.aspx">Log-out</a></li>
                        

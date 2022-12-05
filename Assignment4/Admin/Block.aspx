@@ -1,15 +1,11 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Admin/AdminMaster.Master" AutoEventWireup="true" CodeBehind="Admin1.aspx.cs" Inherits="Assignment4.Admin.Admin1" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Admin/AdminMaster.Master" AutoEventWireup="true" CodeBehind="Block.aspx.cs" Inherits="Assignment4.Admin.Block" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <h1>Admin Home Page</h1>
-  
-    <table>
-       
+     
+               <table>
         <tr>
-           
-            <h2>Confirm-User</h2>
-       
+             <h2>Block-User</h2>
             <td>
                  <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" DataKeyNames="EmployeeId" OnRowDeleting="GridView1_RowDeleting">
         <Columns>
@@ -18,14 +14,11 @@
             <asp:BoundField DataField="Phone" HeaderText="Phone" />
             <asp:BoundField DataField="Age" HeaderText="Age" />
             <asp:BoundField DataField="status" HeaderText="Status" />
-            <asp:CommandField DeleteText="Confirm" HeaderText="Confirm" ShowDeleteButton="True" />
-           
+            <asp:CommandField DeleteText="Block" HeaderText="Block" ShowDeleteButton="True" />
         </Columns>
     </asp:GridView>
             </td>
         </tr>
-
-       </table>
-   
-            
+    </table>
+           
 </asp:Content>

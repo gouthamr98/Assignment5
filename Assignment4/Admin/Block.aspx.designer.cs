@@ -11,7 +11,7 @@ namespace Assignment4.Admin
 {
 
 
-    public partial class Admin1
+    public partial class Block
     {
 
         /// <summary>

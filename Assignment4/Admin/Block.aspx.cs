@@ -7,7 +7,7 @@ using System.Web.UI.WebControls;
 
 namespace Assignment4.Admin
 {
-    public partial class Admin1 : System.Web.UI.Page
+    public partial class Block : System.Web.UI.Page
     {
         Db db = new Db();
         protected void Page_Load(object sender, EventArgs e)
@@ -18,19 +18,18 @@ namespace Assignment4.Admin
                 GridView1.DataBind();
 
             }
+
+
+           
         }
 
         protected void GridView1_RowDeleting(object sender, GridViewDeleteEventArgs e)
         {
             string id = GridView1.DataKeys[e.RowIndex].Value.ToString();
-            db.Executenonquery("update Login set status='Confirm' where LoginId='" + id + "'");
-          
+            db.Executenonquery("update Login set status='Blocked' where LoginId='" + id + "'");
+
             GridView1.DataSource = db.Executedataset("select * from Employee e inner join Login l on e.LoginId=l.LoginId");
             GridView1.DataBind();
-           
-           
         }
-
-      
     }
 }
